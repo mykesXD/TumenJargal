@@ -16,17 +16,23 @@ font_data = ExtResource( 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label" type="Label" parent="."]
 anchor_right = 1.0
 margin_top = 25.0
 margin_bottom = 48.0
-text = "About"
+text = "Credits"
 align = 1
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
@@ -40,25 +46,28 @@ custom_fonts/bold_font = SubResource( 1 )
 custom_fonts/normal_font = SubResource( 2 )
 bbcode_enabled = true
 bbcode_text = "[b]Programming:[/b]
-	[color=aqua]Tumendalai Ochirbat[/color]
-	[color=aqua]Baldorj Bolor[/color]
+	[color=aqua]David Snopek[/color] from [color=yellow][url=https://www.snopekgames.com]Snopek Games[/url][/color]
 
 [b]Art:[/b]
-	[color=aqua]Tumendalai Ochirbat[/color] 
-	[color=aqua]Baldorj Bolor[/color]
+	[color=aqua]Orlando Herrera[/color] a.k.a. [color=yellow][url=https://pixelfrog-store.itch.io/]Pixel Frog[/url][/color]
 
 [b]Music/Sound:[/b]
-	[color=aqua]Got it from www.google.com[/color]
-"
+	[color=aqua]Jakob T. Rypdal[/color]
+
+[b]Font:[/b]
+	[color=yellow][url=https://datagoblin.itch.io/monogram]Monogram[/url][/color] by [color=aqua]Vinícius Menézio[/color]"
 text = "Programming:
-	Tumendalai Ochirbat
-	Baldorj Bolor
+	David Snopek from Snopek Games
 
 Art:
-	Tumendalai Ochirbat 
-	Baldorj Bolor
+	Orlando Herrera a.k.a. Pixel Frog
 
 Music/Sound:
-	Got it from www.google.com
-"
+	Jakob T. Rypdal
+
+Font:
+	Monogram by Vinícius Menézio"
 scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
