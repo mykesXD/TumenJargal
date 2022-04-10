@@ -14,6 +14,7 @@ enum PlayerSkin {
 var skin_resources = [
 	preload("res://assets/sprites/knight.png"),
 	preload("res://assets/sprites/knight2.png"),
+	
 	preload("res://assets/sprites/whale_blue.png"),
 	preload("res://assets/sprites/whale_purple.png"),
 ]
