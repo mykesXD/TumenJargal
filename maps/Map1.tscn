@@ -32,7 +32,7 @@ position = Vector2( 405, -150 )
 pickup_scene = ExtResource( 5 )
 
 [node name="TimedGenerator2" parent="Objects" instance=ExtResource( 9 )]
-position = Vector2( 900, -150 )
+position = Vector2( 901, -120 )
 pickup_scene = ExtResource( 5 )
 
 [node name="TimedGenerator3" parent="Objects" instance=ExtResource( 9 )]

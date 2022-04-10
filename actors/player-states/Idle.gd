@@ -48,7 +48,7 @@ func _state_physics_process(delta: float) -> void:
 			})
 			return
 	elif host.input_buffer.is_action_pressed("down") and host.is_on_floor():
-		get_parent().change_state("Duck")
+		get_parent().change_state("Down")
 		return
 	elif input_vector != Vector2.ZERO:
 		get_parent().change_state("Move", {
