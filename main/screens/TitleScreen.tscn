@@ -1,12 +1,23 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=5 format=2]
+=======
+[gd_scene load_steps=8 format=2]
+>>>>>>> Stashed changes
 
 [ext_resource path="res://assets/fonts/monogram_extended.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/theme.tres" type="Theme" id=2]
 [ext_resource path="res://main/screens/TitleScreen.gd" type="Script" id=3]
+<<<<<<< Updated upstream
+=======
+[ext_resource path="res://assets/ui/chivalry-logo.png" type="Texture" id=4]
+[ext_resource path="res://assets/ui/back.png" type="Texture" id=5]
+>>>>>>> Stashed changes
 
 [sub_resource type="DynamicFont" id=1]
 size = 160
 font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=2]
 
 [node name="TitleScreen" type="Control"]
 anchor_right = 1.0
@@ -21,11 +32,27 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
+<<<<<<< Updated upstream
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TitleLabel" type="Label" parent="."]
+=======
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect"]
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 1921.0
+margin_bottom = 1081.0
+rect_scale = Vector2( 0.33, 0.33 )
+texture = ExtResource( 5 )
+stretch_mode = 1
+
+[node name="TitleLabel" type="Label" parent="."]
+visible = false
+modulate = Color( 1, 0.913725, 0, 1 )
+>>>>>>> Stashed changes
 anchor_right = 1.0
 margin_top = 25.0
 margin_bottom = 130.0
@@ -50,25 +77,46 @@ __meta__ = {
 }
 
 [node name="LocalButton" type="Button" parent="HBoxContainer"]
-margin_left = 97.0
-margin_right = 222.0
+margin_left = 177.0
+margin_right = 302.0
 margin_bottom = 125.0
 rect_min_size = Vector2( 125, 0 )
-text = "Local"
+text = "LOCAL"
 
 [node name="OnlineButton" type="Button" parent="HBoxContainer"]
-margin_left = 257.0
-margin_right = 382.0
+margin_left = 337.0
+margin_right = 462.0
 margin_bottom = 125.0
 rect_min_size = Vector2( 125, 0 )
-text = "Online"
+theme = SubResource( 2 )
+text = "ONLINE"
 
 [node name="CreditsButton" type="Button" parent="HBoxContainer"]
+visible = false
 margin_left = 417.0
 margin_right = 542.0
 margin_bottom = 125.0
 rect_min_size = Vector2( 125, 0 )
 text = "Credits"
+<<<<<<< Updated upstream
+=======
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = 34.0
+margin_top = 12.0
+margin_right = 533.0
+margin_bottom = 117.0
+color = Color( 1, 1, 1, 0 )
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect2"]
+margin_left = -10.0
+margin_top = 3.0
+margin_right = 1490.0
+margin_bottom = 329.0
+rect_scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
+
+>>>>>>> Stashed changes
 [connection signal="pressed" from="HBoxContainer/LocalButton" to="." method="_on_LocalButton_pressed"]
 [connection signal="pressed" from="HBoxContainer/OnlineButton" to="." method="_on_OnlineButton_pressed"]
 [connection signal="pressed" from="HBoxContainer/CreditsButton" to="." method="_on_CreditsButton_pressed"]
