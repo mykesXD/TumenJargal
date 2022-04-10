@@ -123,9 +123,6 @@ bus = "Music"
 
 [node name="Tween" type="Tween" parent="Music"]
 
-[connection signal="game_over" from="Game" to="." method="_on_Game_game_over"]
-[connection signal="game_started" from="Game" to="." method="_on_Game_game_started"]
-[connection signal="player_dead" from="Game" to="." method="_on_Game_player_dead"]
 [connection signal="back_button" from="UILayer" to="." method="_on_UILayer_back_button"]
 [connection signal="change_screen" from="UILayer" to="." method="_on_UILayer_change_screen"]
 [connection signal="play_local" from="UILayer/Screens/TitleScreen" to="." method="_on_TitleScreen_play_local"]

@@ -38,7 +38,6 @@ position = Vector2( 405, -150 )
 pickup_scene = ExtResource( 5 )
 
 [node name="TimedGenerator2" parent="Objects" instance=ExtResource( 9 )]
-position = Vector2( 900, -150 )
 position = Vector2( 901, -149 )
 pickup_scene = ExtResource( 5 )
 
@@ -52,14 +51,6 @@ pickup_scene = ExtResource( 3 )
 
 [node name="TimedGenerator5" parent="Objects" instance=ExtResource( 9 )]
 position = Vector2( 1260, -450 )
-pickup_scene = ExtResource( 3 )
-
-[node name="TimedGenerator6" parent="Objects" instance=ExtResource( 9 )]
-position = Vector2( 990, -690 )
-pickup_scene = ExtResource( 3 )
-
-[node name="TimedGenerator7" parent="Objects" instance=ExtResource( 9 )]
-position = Vector2( 300, -690 )
 pickup_scene = ExtResource( 3 )
 
 [node name="PlayerStartPositions" type="Node2D" parent="."]
