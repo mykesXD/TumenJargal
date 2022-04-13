@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/fonts/PressStart2P.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/theme.tres" type="Theme" id=2]
 [ext_resource path="res://main/screens/TitleScreen.gd" type="Script" id=3]
-[ext_resource path="res://assets/ui/background_castle.jpg" type="Texture" id=4]
+[ext_resource path="res://assets/ui/chivalry-logo.png" type="Texture" id=4]
+[ext_resource path="res://assets/ui/back.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 45
@@ -26,10 +27,12 @@ color = Color( 0, 0, 0, 1 )
 margin_top = 1.0
 margin_right = 640.0
 margin_bottom = 379.0
-texture = ExtResource( 4 )
+rect_scale = Vector2( 0.33, 0.33 )
+texture = ExtResource( 5 )
 stretch_mode = 1
 
 [node name="TitleLabel" type="Label" parent="."]
+visible = false
 modulate = Color( 1, 0.913725, 0, 1 )
 anchor_right = 1.0
 margin_left = 3.0
@@ -51,25 +54,39 @@ custom_constants/separation = 35
 alignment = 1
 
 [node name="LocalButton" type="Button" parent="HBoxContainer"]
-margin_left = 97.0
-margin_right = 222.0
+margin_left = 177.0
+margin_right = 302.0
 margin_bottom = 125.0
 rect_min_size = Vector2( 125, 0 )
 text = "Local"
 
 [node name="OnlineButton" type="Button" parent="HBoxContainer"]
-margin_left = 257.0
-margin_right = 382.0
+margin_left = 337.0
+margin_right = 462.0
 margin_bottom = 125.0
 rect_min_size = Vector2( 125, 0 )
 text = "Online"
 
 [node name="CreditsButton" type="Button" parent="HBoxContainer"]
+visible = false
 margin_left = 417.0
 margin_right = 542.0
 margin_bottom = 125.0
 rect_min_size = Vector2( 125, 0 )
 text = "Credits"
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+color = Color( 1, 1, 1, 0 )
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect2"]
+margin_left = 38.0
+margin_top = 46.0
+margin_right = 600.0
+margin_bottom = 163.0
+texture = ExtResource( 4 )
+expand = true
 
 [connection signal="pressed" from="HBoxContainer/LocalButton" to="." method="_on_LocalButton_pressed"]
 [connection signal="pressed" from="HBoxContainer/OnlineButton" to="." method="_on_OnlineButton_pressed"]
