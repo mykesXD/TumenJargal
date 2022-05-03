@@ -56,4 +56,5 @@ bus = "Sound Effects"
 [node name="Explode3" type="AudioStreamPlayer" parent="Sounds/Explode"]
 stream = ExtResource( 4 )
 bus = "Sound Effects"
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
